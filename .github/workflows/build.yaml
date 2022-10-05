@@ -11,4 +11,6 @@ jobs:
     - name: Compile
       run: |
         sudo apt-get install g++ cmake -y
+        cmake .
+        make
 
