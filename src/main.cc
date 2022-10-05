@@ -5,6 +5,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <employee.h>
 using namespace std;
 
 void swapNumbers(int &x, int &y) {
@@ -92,6 +93,12 @@ int main() {
     int yy = 2;
     swapNumbers(xx, yy);
     cout << "x: " << xx << ", y: " << yy << endl;
+
+    // `Employee` lib
+    Employee ee = Employee("John", "Smith");
+    ee.setDepartment("Financial");
+    cout << ee.getName() << endl;
+    cout << "Department: " << ee.getDepartment() << endl;
 
     return 0;
 }
