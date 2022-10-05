@@ -100,5 +100,17 @@ int main() {
     cout << ee.getName() << endl;
     cout << "Department: " << ee.getDepartment() << endl;
 
+    Employee e2 = Employee("Bob", "Jones");
+    e2.setDepartment("IT");
+
+    vector<Employee> vEmployee;
+    vEmployee.push_back(ee);
+    vEmployee.push_back(e2);
+
+    // The `auto` keyword causes type inference to be used. Preferred.
+    for (auto &item : vEmployee) {
+        cout << item.getName() << endl;
+    }
+
     return 0;
 }
