@@ -13,4 +13,8 @@ jobs:
         sudo apt-get install g++ cmake -y
         cmake .
         make
+    - uses: actions/upload-artifact@v3
+      with:
+        name: cbook-linux-amd64
+        path: bin/cbook
 
