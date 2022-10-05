@@ -2,6 +2,9 @@
 
 Simple cookbook for C++.
 
+This repo contains code for quick reference about how to use C++ as a *better C*.
+There is no intention to deep dive into all the aspect of the language.
+
 ## How to build the binary
 
 First of all, these are the requirements:
